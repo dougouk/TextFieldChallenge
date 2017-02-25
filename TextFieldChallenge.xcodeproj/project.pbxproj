@@ -12,6 +12,8 @@
 		370C31561E60B19B0045341B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370C31541E60B19B0045341B /* Main.storyboard */; };
 		370C31581E60B19B0045341B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370C31571E60B19B0045341B /* Assets.xcassets */; };
 		370C315B1E60B19B0045341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370C31591E60B19B0045341B /* LaunchScreen.storyboard */; };
+		370C31641E60B37F0045341B /* PostalCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370C31631E60B37F0045341B /* PostalCodeDelegate.swift */; };
+		370C31661E60E3A90045341B /* PriceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370C31651E60E3A90045341B /* PriceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		370C31571E60B19B0045341B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370C315A1E60B19B0045341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370C315C1E60B19B0045341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		370C31631E60B37F0045341B /* PostalCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeDelegate.swift; sourceTree = "<group>"; };
+		370C31651E60E3A90045341B /* PriceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		370C314F1E60B19B0045341B /* TextFieldChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				370C31621E60B3710045341B /* Delegates */,
 				370C31501E60B19B0045341B /* AppDelegate.swift */,
 				370C31521E60B19B0045341B /* ViewController.swift */,
 				370C31541E60B19B0045341B /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				370C315C1E60B19B0045341B /* Info.plist */,
 			);
 			path = TextFieldChallenge;
+			sourceTree = "<group>";
+		};
+		370C31621E60B3710045341B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				370C31631E60B37F0045341B /* PostalCodeDelegate.swift */,
+				370C31651E60E3A90045341B /* PriceDelegate.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370C31661E60E3A90045341B /* PriceDelegate.swift in Sources */,
 				370C31531E60B19B0045341B /* ViewController.swift in Sources */,
 				370C31511E60B19B0045341B /* AppDelegate.swift in Sources */,
+				370C31641E60B37F0045341B /* PostalCodeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var postalCodeTextField : UITextField!
+    @IBOutlet var priceTextField : UITextField!
+    @IBOutlet var inputTextField : UITextField!
+    
+    let postalCodeDelegate = PostalCodeDelegate()
+    let priceDelegate = PriceDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        postalCodeTextField.delegate = postalCodeDelegate
+        priceTextField.delegate = priceDelegate
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    
+    
+    
 
 }
 
