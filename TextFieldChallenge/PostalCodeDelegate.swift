@@ -15,10 +15,17 @@ class PostalCodeDelegate : NSObject, UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         var newText = textField.text! as NSString
         
-        if newText.length > 6 {
+        //detect backspace
+        let  char = string.cString(using: String.Encoding.utf8)
+        let isBackSpace = strcmp(char, "\\b")
+        
+        if newText.length > 6 && isBackSpace != -92 {
             print("Length is maxed")
             
             return false
+        }
+        else if isBackSpace == -92{
+            return true
         }
         else{
         

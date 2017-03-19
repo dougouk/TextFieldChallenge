@@ -57,6 +57,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="canEdit" destination="Qy5-4D-Lzl" id="p0w-ex-KoX"/>
                         <outlet property="inputTextField" destination="rqd-Fb-uzU" id="dV6-b6-fcj"/>
                         <outlet property="postalCodeTextField" destination="YRq-1b-Sam" id="Ebh-4P-vQ1"/>
                         <outlet property="priceTextField" destination="dDP-7b-GZ5" id="h45-VB-ZiF"/>

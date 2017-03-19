@@ -35,8 +35,8 @@ class PriceDelegate : NSObject, UITextFieldDelegate{
             totalPrice.append(Character.init(string))
             print("totalPrice: " + totalPrice)
             
-            var oldText = textField.text as! NSString
-            var newText = oldText.replacingCharacters(in: range, with: string)
+            //let oldText = textField.text as! NSString
+            //var newText = oldText.replacingCharacters(in: range, with: string)
             var digitText : String
             if pennyDigitCount == 0{
                 digitText = "$0.0" + totalPrice
